@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ByteLevel | Home Automation & Precision Chip Repair</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Orbitron:wght@600;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo-container">
+        <!-- Replace logo.png with your image file -->
+        <img src="ByteLevel.png" alt="ByteLevel Logo" class="brand-logo" onerror="this.style.display='none'">
+        <div class="logo-text">BYTE<span>LEVEL</span></div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <!-- <li><a href="#automation">Home Automation</a></li>
+        <li><a href="#repairs">Chip Repair</a></li> -->
+        <li><a href="#estimator">Cost Estimator</a></li>
+        <li><a href="#contact" class="btn btn-nav">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text-block">
+        <div class="badge-pill">
+          <i class="fas fa-shield-halved"></i> Precision Engineering & Smart Living
+        </div>
+        <h1 class="hero-title">READY TO UPGRADE <br>
+          <span class="highlight-cyan">OR FIX IT?</span>
+        </h1>
+        <p class="hero-tagline">Transform Your Home. Revive Your Devices.</p>
+        <p class="hero-desc">
+          ByteLevel bridges the gap between next-generation smart living and microscopic electronics restoration. From bespoke IoT automation ecosystems to component-level motherboard and BGA chip diagnostics.
+        </p>
+        <div class="hero-actions">
+          <a href="#repairs" class="btn btn-primary"><i class="fas fa-microchip"></i> Chip Repair</a>
+          <!-- <a href="#automation" class="btn btn-outline"><i class="fas fa-house-signal"></i> Smart Automation</a> -->
+          <a href="#automation" class="btn btn-primary"><i class="fas fa-house-signal"></i> Smart Automation</a> 
+
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-item">
+            <h3 class="counter" data-target="100">0</h3><span>%</span>
+            <p>Diagnostic Accuracy</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="counter" data-target="100">0</h3><span>%</span>
+            <p>Devices Revived</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="counter" data-target="100">0</h3><span>%</span>
+            <p>Smart Installations</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="floating-tech-card">
+          <div class="tech-icon-glow">
+            <i class="fas fa-laptop-medical"></i>
+          </div>
+          <h3>Precision Care & Installations</h3>
+          <p>Reballing, Trace Rebuilding, short-to-ground isolation, & power rails logic decoding. Higly Accurete and Custome OS Installation. Server Configuration , Data Backup Systems, Custome Network Storage System with BMR.</p>
+          <div class="live-status">
+            <span class="pulse-dot"></span> Diagnostics Lab
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Services Section -->
+  <section id="services" class="services-section">
+    <div class="section-header">
+      <p class="section-subtitle">Our Specializations</p>
+      <h2 class="section-title">Engineered For High Performance</h2>
+    </div>
+
+    <div class="services-grid">
+      <!-- Service 1 -->
+      <div class="service-card" id="repairs">
+        <div class="card-glow"></div>
+        <div class="service-icon"><i class="fas fa-microchip"></i></div>
+        <span class="card-badge">Level 4 Repair</span>
+        <h3>Chip-Level Repair</h3>
+        <p>Advanced SMD & BGA soldering, CPU/GPU rework, dead power rail troubleshooting, liquid spill deoxidation, and broken solder pad trace reconstruction. Board-level signal tracing using digital storage oscilloscopes, schematic diagrams. dentifying faults on individual resistors, capacitors, and power management ICs rather than simply swapping out entire expensive boards.</p>
+        <ul class="feature-checklist">
+          <li><i class="fas fa-check"></i> Power IC & MOSFET replacement.</li>
+          <li><i class="fas fa-check"></i> BIOS reprogramming & Clean ME Region.</li>
+          <li><i class="fas fa-check"></i> Thermal imaging hotspot detection.</li>
+          <li><i class="fas fa-check"></i> Zero-voltage rail analysis.</li>
+          <li><i class="fas fa-check"></i> No-display & intermittent freeze fixes.</li>
+          <li><i class="fas fa-check"></i> Component-Level Diagnostics.</li>
+          <li><i class="fas fa-check"></i> Trace & Layer Repair.</li>
+        </ul>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card" id="automation">
+        <div class="card-glow"></div>
+        <div class="service-icon"><i class="fas fa-house-signal"></i></div>
+        <span class="card-badge">Smart IoT</span>
+        <h3>Home Automation Systems</h3>
+        <p>Convert conventional spaces into intelligent ecosystems. Voice, sensor, and app-controlled lighting, climate regulation, dynamic curtains, and custom smart switch boards. Most IoT providers operate purely at the software or plug-and-play hardware level; ByteLevel brings root-level hardware knowledge to design more reliable, custom-engineered solutions.</p>
+        <ul class="feature-checklist">
+          <li><i class="fas fa-check"></i> Retrofit & wireless relay integrations</li>
+          <li><i class="fas fa-check"></i> Smart scenes & energy-saving automation</li>
+          <li><i class="fas fa-check"></i> Centralized touch panels & mobile control</li>
+          <li><i class="fas fa-check"></i> Local Control / Online control</li>
+          <li><i class="fas fa-check"></i> Hardware-level integration for security, power, and environmental telemetry.</li>
+
+        </ul>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card">
+        <div class="card-glow"></div>
+        <div class="service-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+        <span class="card-badge"> Hardware / Software</span>
+        <h3>Installation & Diagnostics </h3>
+        <p>Higly Accurete and Custome OS Installation. Server Configuration , Data Backup Systems, Custome Network Storage System with BMR. Unlike standard file-level backups that only save specific documents or folders, a BMR backup captures an exact, block-level image of the entire disk.</p>
+        <ul class="feature-checklist">
+          <li><i class="fas fa-check"></i> Server Indtallation</li>
+          <li><i class="fas fa-check"></i> Desktop/Laptop Installation</li>
+          <li><i class="fas fa-check"></i> Maintenance Service</li>
+          <li><i class="fas fa-check"></i> BMR(Bare Metal Recovery) Systems</li>
+          <li><i class="fas fa-check"></i>Minimal-downtime disaster recovery.</li>
+          <li><i class="fas fa-check"></i> Remote Service</li>
+          <li><i class="fas fa-check"></i>Hardware Refresh / Migration</li>
+          <li><i class="fas fa-check"></i>Tailored operating system installations optimized for specific workloads, minimal bloatware, and hardened security profiles.</li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Estimator Section -->
+  <section id="estimator" class="estimator-section">
+    <div class="section-header">
+      <p class="section-subtitle">Instant Calculator</p>
+      <h2 class="section-title">Service Cost Estimator</h2>
+    </div>
+
+    <div class="calc-wrapper">
+      <div class="calc-form">
+        <div class="form-group">
+          <label for="serviceType">Select Category</label>
+          <select id="serviceType">
+            <option value="chip">Chip-Level Laptop Repair</option>
+            <option value="automation">Home Automation Systems</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="issueDetail">Select Service / Issue Type</label>
+          <select id="issueDetail">
+            <!-- Dynamically populated via script.js -->
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="deviceType">Device / Property Type</label>
+          <select id="deviceType">
+            <option value="standard">Standard / Residential </option>
+            <option value="pro">High-End / Gaming / Villa </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="calc-display-card">
+        <p class="calc-label">Estimated Service Range</p>
+        <div class="calc-price-tag" id="priceDisplay">--</div>
+        <p class="calc-note">*Estimated baseline cost. Final pricing is confirmed after hands-on schematic/site diagnosis.</p>
+        <a href="#contact" class="btn btn-primary btn-block"><i class="fas fa-calendar-check"></i> Book Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="section-header">
+      <p class="section-subtitle">Get In Touch</p>
+      <h2 class="section-title">Ready To Upgrade Or Fix It?</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Contact ByteLevel</h3>
+        <p>Have a dead laptop or planning an Automated Home Setup ? Reach out to us directly.</p>
+        
+        <div class="info-list">
+          <div class="info-row">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <p>contactbytelevel@gmail.com</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <i class="fas fa-phone"></i>
+            <div>
+              <strong>WhatsApp</strong>
+              <p>+91 92091 16001</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <i class="fas fa-location-dot"></i>
+            <div>
+              <strong>Service Lab</strong>
+              <p>Specialized Electronics & Automation Lab</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="Phone Number" required>
+        </div>
+        <div class="form-group">
+          <textarea rows="4" placeholder="Describe your requirement or laptop issue..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-paper-plane"></i> Send Inquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo-text">BYTE<span>LEVEL</span></div>
+        <p>Transform Your Home. Revive Your Devices.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+<!--        <a href="#repairs">Repairs</a>
+        <a href="#automation">Automation</a> -->
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ByteLevel. All rights reserved.</p>
+        <p><a href="index_o.html">Founder's Information.</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
